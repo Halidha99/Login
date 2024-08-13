@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane opacity="0.98" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: 100e0e;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="2.0" height="400.0" layoutX="257.0" opacity="0.64" stroke="BLACK" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-opacity: 0.8; -fx-blend-mode: rgba(207, 106, 135,1.0);" width="351.0">
+         <fill>
+            <LinearGradient endX="0.863636421434807" endY="0.5909090746532787" startX="0.5606060723463695" startY="0.23863640698519623">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7781254053115845" green="0.32679998874664307" blue="0.8600000143051147" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8386484980583191" green="0.716101348400116" blue="0.8631578683853149" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Circle fill="#e3e9ef" layoutX="451.0" layoutY="54.0" opacity="0.59" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView layoutX="419.0" layoutY="22.0" style="-fx-blend-mode: rgba(165, 94, 234,1.0);">
+         <image>
+            <Image url="@../img/lock.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="281.0" fitWidth="261.0" layoutX="-4.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/images.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblLogin" layoutX="33.0" layoutY="37.0" prefHeight="34.0" prefWidth="186.0" text="Login Page" textFill="#100e0e">
+         <font>
+            <Font name="Book Antiqua" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="353.0" layoutY="145.0" prefHeight="29.0" prefWidth="195.0" promptText="UserName" />
+      <TextField fx:id="txtPassword" layoutX="353.0" layoutY="216.0" prefHeight="30.0" prefWidth="195.0" promptText="Password" />
+      <Button fx:id="btnLogin" layoutX="409.0" layoutY="295.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: rgba(85, 230, 193,1.0);" text="Login">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblbox" layoutX="360.0" layoutY="352.0" prefHeight="30.0" prefWidth="195.0" />
+   </children>
+</AnchorPane>
